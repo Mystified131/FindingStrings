@@ -1,9 +1,14 @@
+#This code retrieves the modules
+
 import re
 import requests
 
+#This code fetches a blob of text from the web target
+
 page = requests.get("http://www.thomasparksolutions.com").text
 
-# Replace the string Python with your desired regex
+#This code finds all substrings starting with the first snippet, and ending with the second
+#Replace the string with your desired regex, and prints the result(s)
 
 found = []
 

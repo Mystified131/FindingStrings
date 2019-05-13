@@ -1,9 +1,13 @@
+#This code imports the necessary modules
+
 import re
 import requests
 
+#This code gets a blob of text from the webpage target
+
 page = requests.get("http://www.thomasparksolutions.com").text
 
-# Replace the string Python with your desired regex
+#This code finds substrings that begin and end as mentioned, and prints them
 
 found = []
 
